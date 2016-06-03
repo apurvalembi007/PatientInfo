@@ -18,7 +18,7 @@ public class PatientTest {
 	PersonName pName = new PersonName(null);
 //	           PersonName pName2 = new PersonName();
 //	 pName.setFirstName("Apurva");
-	 pName.FirstName = "APURVA";
+	 pName.setFirstName("APURVA");
 	 pName.setMiddleName("M.");
 	 pName.setLastName("Lembi");
 	 pName.setPrefered("Appi");
@@ -76,10 +76,7 @@ public class PatientTest {
      alList.add(al2);
      patient.setAllergy(alList);
      
-    
-     
-
-     
+   
      
      
      ll.add(patient);

@@ -1,23 +1,18 @@
 
 public class PersonName {
-	public String FirstName;
+	private String FirstName;
 	private String MiddleName;
 	private String LastName;
 	private String PreferedName;
 	
-	PersonName(String FirstName)
-	{
-		this.FirstName = FirstName;
-		
+	PersonName(String FirstName){
+		this.FirstName = FirstName;	
 	}
-	
-	
 	
 	public void setFirstName(String FirstName){
 		this.FirstName = FirstName;
 		
 	}
-	
 	
 	public void setMiddleName(String MiddleName){
 		this.MiddleName = MiddleName;
@@ -38,10 +33,8 @@ public class PersonName {
 		
 	}
 	public String getNameinfo(){
-		return String.format("%s %s %s",FirstName,MiddleName, LastName);
+		return String.format("%s %s %s",FirstName, MiddleName, LastName);
 	}
-	
-	
 	
 	public String getFirst()
 	{
