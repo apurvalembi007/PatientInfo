@@ -1,11 +1,8 @@
 
 public class Phone {
-
 	
-	    
-    	/** One of the <emphasis>Phone Type Codes</emphasis>." */
-	public int code; //682
-	public int number; //564-8536
+	private int code; //682
+	private int number; //564-8536
 	
 	/**  A description of the phone type. */
 
@@ -26,17 +23,6 @@ public class Phone {
 		this.number = number;
 	}
 	
-
-
-
-
-public static void main(String[] args) {
-    Phone a = new Phone(609, 2584455);
-   
-    System.out.println("a = " + a);
-    System.out.println(a.getPhoneNumber());
-   
-}
 }
 
 
