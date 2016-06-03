@@ -1,18 +1,33 @@
 
 public class Address {
-
-
 		 
-		  String street;
-		  int    apartmentNumber;
-		  String city;
-		  String state;
+	private	String street;
+	private	int apartmentNumber;
+    private String city;
+	private	String state;
 	private String zipCode; // e.g., "47405-123
-		  String country;
+	private	String country;
 		  
 		  Address(){
 			  
 		  }
+		  
+		  Address(
+		          String street, 
+		          int apartmentNumber,  
+		          String city, 
+		          String state, 
+		          String zipCode,
+		          String country) { 
+		    
+		    this.street = street; 
+		    this.apartmentNumber = apartmentNumber; 
+		    this.city = city; 
+		    this.state = state; 
+		    this.zipCode = zipCode; 
+		    this.country = country;
+		  } 
+		 
 		  public void setStreetAddress(String street){
 			  this.street = street;
 		  }
@@ -35,30 +50,9 @@ public class Address {
 		  public void setCountry(String country){
 			  this.country = country;
 		  }
-		 
-		  
-		  
-		  Address(
-		          String street, 
-		          int apartmentNumber,  
-		          String city, 
-		          String state, 
-		          String zipCode,
-		          String country) { 
-		    
-		    this.street = street; 
-		    this.apartmentNumber = apartmentNumber; 
-		    this.city = city; 
-		    this.state = state; 
-		    this.zipCode = zipCode; 
-		    this.country = country;
-		  } 
-		 
-		   
 		  
 		  public String display(){
 				return String.format("%s %s %s%s",street,city, state,zipCode);
 			}
 		  
-		
 		}
